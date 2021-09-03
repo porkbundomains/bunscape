@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>BunOS 1.01 For Workgroups</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="os-style.css" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="os-code.js"></script>
+  
+  </head>
+  <body>
+    <div id="intro" class="window" style="position: absolute; top: 20px; left: 100px; width: 500px; height: 200px; z-index: 1">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Readme</div>
+      </div>
+      <div class="windowinner">
+        <div class="fullwindowhtml">
+          <p>Welcome to BunOS.</p>
+          <p>So far, we've only got one app: Bunscape, a browser that uses DNS as its transport. Open Bunscape below to see HTML-over-DNS in action.</p>
+          <p>In case you're throughly confused, check out <a href="https://github.com/porkbundomains/bunscape/">this project's readme on Github.</a> Special thanks to <a href="https://github.com/ianrenton/web3point1">Ian Renton</a> for creating the framework for BunOS.</p>
+          <p>TXTTP, BunOS and Bunscape are projects of <a href="https://porkbun.institute/">the Porkbun Institute.</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="progman" class="window selectedwindow" style="position: absolute; top: 250px; left: 150px; width: 500px; height: 200px; z-index: 2">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Program Manager</div>
+      </div>
+      <div class="windowinner">
+        <div class="fullwindowicons">
+          <div class="icon" onclick="newWindow('#bunscape')">
+            <img src="icons/porkbun.png">
+            <p>Bunscape</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="bunscape" class="window" style="position: absolute; top: 5vh; left: 20vw; width: 50vw; height: 77vh; z-index: 2; display: none;">
+      <div class="windowheader">
+        <div class="windowclose"></div>
+        <div class="windowtitle">Bunscape</div>
+      </div>
+      <div class="windowinner">
+		<iframe scrolling=no style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;" name="browser" id="middleframe"></iframe>​
+		<script src="middleframeHTML.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
