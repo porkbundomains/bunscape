@@ -30,9 +30,6 @@ html, body {
     font-family: 'WinThreeOne', sans-serif;
     background-color: #EF7878;
     font-size: 12px;
-    font-smooth: never;
-    -webkit-font-smoothing : none;
-    image-rendering: pixelated;
 }
 
 
