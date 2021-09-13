@@ -8,7 +8,7 @@ TXTTP is a new protocol that stores and retrieves binary data as Data URIs withi
 
 Live demo at https://porkbun.institute/bunscape
 
-or, download the repo and open index.html, it should run fine locally in most modern web browsers.
+or, download the repo and open release/index.html, it should run fine locally in most modern web browsers.
 
 
 ## The browser
